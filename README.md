@@ -7,16 +7,16 @@ In this model we predict the winning percentage of chasing team overs by overs.
 - In Machine Learning, the problems are categorized into 2 groups mainly: Regression Problem and Classification problem. The Regression problem deals with the kind of problems having continuous values as output while in the Classification problem the outputs are categorical values. Since the output of winner prediction is a categorical value, the problem which we are trying to solve is a Classification problem.
 
 # Dataset Description
-• id: Unique match id.
-• date: Date on which the match was played.
-• city: Stadium where match was played.
+- id: Unique match id.
+- date: Date on which the match was played.
+- city: Stadium where match was played.
 - season: which year tournament is bing played
-• battingteam: Batting team name.
-• bowlingteam: Bowling team name.
-• batsman: Batsman who faced that particular ball.
-• bowler: Bowler who bowled that particular ball.
-• runs: Runs scored by team till that point of instance.
-• wickets: Number of Wickets fallen of the team till that point of instance.
+- battingteam: Batting team name.
+- bowlingteam: Bowling team name.
+- batsman: Batsman who faced that particular ball.
+- bowler: Bowler who bowled that particular ball.
+- runs: Runs scored by team till that point of instance.
+- wickets: Number of Wickets fallen of the team till that point of instance.
 - overs: Number of Overs bowled till that point of instance.
 - striker: max(runs scored by striker, runs scored by non-striker).
 - non-striker: min(runs scored by striker, runs scored by non-striker).
@@ -32,3 +32,9 @@ In this model we predict the winning percentage of chasing team overs by overs.
 # Algorithms Used
 Logestic Regression
 Random Forest Regression
+
+# Conclusion
+
+- It shows that RandomForestClassifier gives better accuracy than LogisticRegression but RFC is not good for giving 
+probability of winning percentage it will baised towards particular team so we chosse Logestic Regression for 
+probability prediction.  
